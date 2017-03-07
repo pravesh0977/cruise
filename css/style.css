@@ -1,3 +1,4 @@
+/*Custom Fonts*/
 @font-face {
 	font-family: 'body';
 	src: url('../fonts/gillsans.eot');
@@ -30,6 +31,7 @@
 	font-style: normal;
 }
 
+/*Defaults*/
 * {
 	font-family: 'body';
 	font-size: 24px;
@@ -38,6 +40,7 @@
 	box-sizing: border-box;
 }
 
+/*preset body and base elements*/
 body {
 	background-color: #000;
 	background-image: url(../img/bg.jpg);
@@ -83,6 +86,7 @@ h6 {
 	font-size: 24px;
 }
 
+/*build a button*/
 .btn {
 	text-decoration: none;
 	margin: 10px;
@@ -102,6 +106,13 @@ h6 {
 	text-shadow: none;
 }
 
+/*header styles*/
+header {
+	background: #000;
+	padding: 15px;
+	border-bottom: 10px double #C0C;
+}
+
 #logo {
 	font-family: 'logotype';
 	font-size: 30px;
@@ -109,16 +120,6 @@ h6 {
 	display: inline-block;
 	letter-spacing: 1px;
 	color: #f0f;
-}
-
-svg path {
-	fill: #fff;
-}
-
-header {
-	background: #000;
-	padding: 15px;
-	border-bottom: 10px double #C0C;
 }
 
 nav {
@@ -152,8 +153,6 @@ nav>ul>li:nth-child(3),
 nav>ul>li:nth-child(4),
 nav>ul>li:nth-child(5) {
 	width: 40px;
-	/*font-size: 20px;
-	text-align: center;*/
 }
 
 nav>ul>li:nth-child(3) a,
@@ -188,6 +187,7 @@ nav ul li:hover ul li:hover a {
 	border-color: #fff;
 }
 
+/*hero style*/
 #hero {
 	background-image: url(../img/bghero.jpg);
 	background-size: 100% auto;
@@ -196,7 +196,6 @@ nav ul li:hover ul li:hover a {
 	padding: 80px 0px 0px 0px;
 	text-align: center;
 	text-shadow: 0px 2px 10px #000;
-	/*box-shadow: inset 0px 0px 500px 50px #000;*/
 	height: 60vh;
 	display: flex;
 	justify-content: center;
@@ -204,6 +203,7 @@ nav ul li:hover ul li:hover a {
 	align-content: center;
 }
 
+/*call to action*/
 .cta {
 	background-image: url(../img/bghero.jpg);
 	background-size: 100% auto;
@@ -228,6 +228,7 @@ nav ul li:hover ul li:hover a {
 	opacity: 1.0!important;
 }
 
+/*benefits section*/
 #benefits {
 	padding: 100px 50px;
 	text-align: center;
@@ -245,6 +246,20 @@ nav ul li:hover ul li:hover a {
 	margin: 10px;
 	padding: 20px;
 	box-shadow: 10px 10px 20px 2px rgba(0, 0, 0, .5);
+}
+
+#benefits h5 {
+	letter-spacing: 2px;
+}
+
+#benefits p {
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+/*svg animation*/
+svg path {
+	fill:#fff;
 }
 
 @-webkit-keyframes iconflip {
@@ -285,13 +300,9 @@ nav ul li:hover ul li:hover a {
 
 #benefits>div:hover>div {
 	-webkit-animation: iconflip 2s infinite;
-	/* Safari 4+ */
 	-moz-animation: iconflip 2s infinite;
-	/* Fx 5+ */
 	-o-animation: iconflip 2s infinite;
-	/* Opera 12+ */
 	animation: iconflip 2s infinite;
-	/* IE 10+, Fx 29+ */
 }
 
 #benefits>div>div>svg {
@@ -300,15 +311,7 @@ nav ul li:hover ul li:hover a {
 	padding: 20px;
 }
 
-#benefits h5 {
-	letter-spacing: 2px;
-}
-
-#benefits p {
-	font-size: 20px;
-	margin-top: 20px;
-}
-
+/*upcoming section*/
 #upcoming {
 	background-color: #000;
 	background-image: url(../img/bghalloween.jpg);
@@ -339,10 +342,13 @@ nav ul li:hover ul li:hover a {
 	border: 2px solid #c0c;
 }
 
+
+/*subpage preset*/
 #title {
 	margin: 20px;
 }
 
+/*event section*/
 .event {
 	max-width: 650px;
 	margin: 20px auto;
